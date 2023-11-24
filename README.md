@@ -23,7 +23,7 @@ We will first introduce our method and principles, then introduce the experiment
 ### FINE Module
 
 <div align=center>
-  <img src="https://github.com/IIPL-HangzhouDianziUniversity/SASAN-pytorch/blob/main/figures/FINE.png"width=60% height=60%>
+  <img src="https://github.com/IIPL-HangzhouDianziUniversity/SASAN-pytorch/blob/main/figures/FINE.png"width=80% height=80%>
 </div>
 <p align=center>
   Figure 2: The FINE Module.
