@@ -14,3 +14,7 @@ Hangzhou Dianzi University
 <p align=center>
   Figure 1: The System structure.
 </p>
+
+We proposed SASAN, a novel 3D medical image segmentation network, and our approach achieved state-of-the-art performance compared to 13 previous segmentation methods.
+
+We will first introduce our method and principles, then introduce the experimental environment and provide Github links to previous methods we have compared. Finally, we will present the experimental results and our pre-trained model.
