@@ -23,7 +23,7 @@ We will first introduce our method and principles, then introduce the experiment
 ### FINE Module
 
 <div align=center>
-  <img src="https://github.com/IIPL-HangzhouDianziUniversity/SASAN-pytorch/blob/main/figures/FINE.png">
+  <img src="https://github.com/IIPL-HangzhouDianziUniversity/SASAN-pytorch/blob/main/figures/FINE.png"width=50% height=50%>
 </div>
 <p align=center>
   Figure 2: The FINE Module.
@@ -34,7 +34,7 @@ FINE combines spatial and frequency domain information to add low-frequency deta
 ### ASEM Module
 
 <div align=center>
-  <img src="https://github.com/IIPL-HangzhouDianziUniversity/SASAN-pytorch/blob/main/figures/ASEM.png">
+  <img src="https://github.com/IIPL-HangzhouDianziUniversity/SASAN-pytorch/blob/main/figures/ASEM.png"width=50% height=50%>
 </div>
 <p align=center>
   Figure 2: The FINE Module.
