@@ -8,3 +8,9 @@ Xingru Huang, Jian Huang, Kai Zhao, Tianyun Zhang, Zhi Li, Changpeng Yue, Wenhao
 
 Hangzhou Dianzi University
 
+<div align=center>
+  <img src="https://github.com/IIPL-HangzhouDianziUniversity/SASAN-pytorch/blob/main/tables/SASAN.pdf">
+</div>
+<p align=center>
+  Figure 1: The System structure.
+</p>
