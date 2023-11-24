@@ -44,3 +44,17 @@ ASEM comprehensively extracts spatial features and features along each axis of 3
 
 ## Installation
 We run SASAN and previous methods on a system running Ubuntu 22.04, with Python 3.9, PyTorch 2.0.0, and CUDA 11.8. For a full list of software packages and version numbers, see the experimental environment file `environment.yml`. 
+
+## Experiment
+### Baselines
+
+We have provided the GitHub links to the PyTorch implementation code for all networks compared in the experiments herein.
+
+
+### Training Results
+
+
+
+
+
+
