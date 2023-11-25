@@ -37,7 +37,7 @@ FINE combines spatial and frequency domain information to add low-frequency deta
   <img src="https://github.com/IIPL-HangzhouDianziUniversity/SASAN-pytorch/blob/main/figures/ASEM.png">
 </div>
 <p align=center>
-  Figure 2: The FINE Module.
+  Figure 3: The ASEM Module.
 </p>
 
 ASEM comprehensively extracts spatial features and features along each axis of 3D OCT sequences, significantly enhancing the network's analytical capabilities.
