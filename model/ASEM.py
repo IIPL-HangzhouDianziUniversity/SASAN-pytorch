@@ -30,7 +30,7 @@ def calculate_permutations(num_dimensions, emb_dim):
       
     return permutations
 
-class PermuteToFrom(nn.Module):
+class Permute(nn.Module):
     def __init__(self, permutation, fn):
         super().__init__()
         self.fn = fn
@@ -91,7 +91,7 @@ class AxialAttention(nn.Module):
 
         attentions = []
         for permutation in calculate_permutations(num_dimensions, dim_index):
-            attentions.append(PermuteToFrom(permutation, SelfAttention(dim, heads, dim_heads)))
+            attentions.append(Permute(permutation, SelfAttention(dim, heads, dim_heads)))
 
         self.axial_attentions = nn.ModuleList(attentions)
         self.sum_axial_out = sum_axial_out
