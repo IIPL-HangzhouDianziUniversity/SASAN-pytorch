@@ -60,7 +60,7 @@ We have provided GitHub links pointing to the PyTorch implementation code for al
   <img src="https://github.com/IIPL-HangzhouDianziUniversity/SASAN-pytorch/blob/main/tables/Compare.png">
 </div>
 <p align=center>
-  Figure 4: Comparison experiments between our method and 13 existing segmentation methods.
+  Figure 4: Comparison experiments between our method and 13 previous segmentation methods.
 </p>
 
 <div align=center>
@@ -70,10 +70,11 @@ We have provided GitHub links pointing to the PyTorch implementation code for al
   Figure 5: The segmentation results of our method compared to the existing 13 segmentation methods.
 </p>
     
-Our method has shown excellent performance on all indicators.
+Our method demonstrates the best performance across all categories and metrics. SASAN outperforms previous methods in detail segmentation of choroidal and macular edema categories, highlighting the role of low-frequency data in enhancing details and reducing noise. In addition, SASAN performs well in boundary segmentation of retinal categories, thanks to its BoundaryRea loss and self-updating mechanism, which improves sensitivity to boundary distance.
 
 ### Ablation study
 
+#### Key components of SASAN
 <div align=center>
   <img src="https://github.com/IIPL-HangzhouDianziUniversity/SASAN-pytorch/blob/main/tables/Ablation1.png">
 </div>
@@ -82,6 +83,8 @@ Our method has shown excellent performance on all indicators.
 </p>
 
 FINE introduces a wide range of low-frequency features, which has a good effect in reducing high-frequency noise and enhancing detail extraction, and ASEM has a strong ability to enhance the network for the analysis of features that are difficult to distinguish objects.
+
+#### Loss function strategy
 
 <div align=center>
   <img src="https://github.com/IIPL-HangzhouDianziUniversity/SASAN-pytorch/blob/main/tables/Ablation2.png">
