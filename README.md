@@ -23,7 +23,7 @@ We will first introduce our method and principles, then introduce the experiment
 ### FINE Module
 
 <div align=center>
-  <img src="https://github.com/IIPL-HangzhouDianziUniversity/SASAN-pytorch/blob/main/figures/FINE.png"width=80% height=80%>
+  <img src="https://github.com/IIPL-HangzhouDianziUniversity/SASAN-pytorch/blob/main/figures/FINE.png"width=50% height=50%>
 </div>
 <p align=center>
   Figure 2: The FINE Module.
@@ -34,10 +34,10 @@ FINE combines spatial and frequency domain information to add low-frequency deta
 ### ASEM Module
 
 <div align=center>
-  <img src="https://github.com/IIPL-HangzhouDianziUniversity/SASAN-pytorch/blob/main/figures/ASEM.png"width=80% height=80%>
+  <img src="https://github.com/IIPL-HangzhouDianziUniversity/SASAN-pytorch/blob/main/figures/ASEM.png"width=50% height=50%>
 </div>
 <p align=center>
-  Figure 3: The ASEM Module.
+  Figure 2: The FINE Module.
 </p>
 
 ASEM comprehensively extracts spatial features and features along each axis of 3D OCT sequences, significantly enhancing the network's analytical capabilities.
@@ -48,8 +48,11 @@ We run SASAN and previous methods on a system running Ubuntu 22.04, with Python 
 ## Experiment
 ### Baselines
 
-We have provided the GitHub links to the PyTorch implementation code for all networks compared in the experiments herein.
+[3D U-Net](https://github.com/wolny/pytorch-3dunet); [RAUNet](https://github.com/nizhenliang/RAUNet); [UNETR](https://github.com/tamasino52/UNETR); [SwinUNETR](https://github.com/LeonidAlekseev/Swin-UNETR); [ResUNet](https://github.com/rishikksh20/ResUnet);
+[MultiResUNet](https://github.com/nibtehaz/MultiResUNet); [V-Net](https://github.com/mattmacy/vnet.pytorch); [3D UX-Net](https://github.com/MASILab/3DUX-Net); [SegResNet](https://github.com/Project-MONAI/MONAI/blob/dev/monai/networks/nets/segresnet.py); [HighRes3DNet](https://github.com/fepegar/highresnet);
+[TransBTS](https://github.com/Rubics-Xuan/TransBTS); [nnFormer](https://github.com/282857341/nnFormer); [SETR](https://github.com/fudan-zvg/SETR)
 
+We have provided GitHub links pointing to the PyTorch implementation code for all networks compared in this experiment so you can easily reproduce all these projects.
 
 ### Training Results
 
