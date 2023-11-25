@@ -63,13 +63,20 @@ We have provided GitHub links pointing to the PyTorch implementation code for al
   Figure 4: Comparison experiments between our method and 13 existing segmentation methods.
 </p>
 
+<div align=center>
+  <img src="https://github.com/IIPL-HangzhouDianziUniversity/SASAN-pytorch/blob/main/figures/Rendering.png>
+</div>
+<p align=center>
+  Figure 5: The segmentation results of our method compared to the existing 13 segmentation methods.
+</p>
+    
 Our method has shown excellent performance on all indicators.
 
 <div align=center>
   <img src="https://github.com/IIPL-HangzhouDianziUniversity/SASAN-pytorch/blob/main/tables/Ablation1.png>
 </div>
 <p align=center>
-  Figure 5: Ablation experiments on key components of SASAN.
+  Figure 6: Ablation experiments on key components of SASAN.
 </p>
 
 FINE introduces a wide range of low-frequency features, which has a good effect in reducing high-frequency noise and enhancing detail extraction, and ASEM has a strong ability to enhance the network for the analysis of features that are difficult to distinguish objects.
@@ -78,10 +85,10 @@ FINE introduces a wide range of low-frequency features, which has a good effect 
   <img src="https://github.com/IIPL-HangzhouDianziUniversity/SASAN-pytorch/blob/main/tables/Ablation2.png>
 </div>
 <p align=center>
-  Figure 6: Ablation experiments on Loss function strategy.
+  Figure 7: Ablation experiments on Loss function strategy.
 </p>
 
-The self updating mechanism and BoundaryRea Loss enhance the network's boundary segmentation ability.
+The self-updating mechanism and BoundaryRea Loss enhance the network's boundary segmentation ability.
 
 
 
