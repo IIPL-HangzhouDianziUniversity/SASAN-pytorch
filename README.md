@@ -93,7 +93,6 @@ FINE introduces a wide range of low-frequency features, which has a good effect 
   Figure 7: Ablation experiments on Loss function strategy.
 </p>
 
-The self-updating mechanism and BoundaryRea Loss enhance the network's boundary segmentation ability.
-
+The self-updating mechanism and BoundaryRea Loss enhance the network's boundary segmentation ability  And to a certain extent, it also improves the overall segmentation ability of the network.
 
 
