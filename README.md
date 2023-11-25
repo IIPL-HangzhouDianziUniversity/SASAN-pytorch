@@ -54,7 +54,7 @@ We run SASAN and previous methods on a system running Ubuntu 22.04, with Python 
 
 We have provided GitHub links pointing to the PyTorch implementation code for all networks compared in this experiment so you can easily reproduce all these projects.
 
-### Training Results
+### Compare with others
 
 <div align=center>
   <img src="https://github.com/IIPL-HangzhouDianziUniversity/SASAN-pytorch/blob/main/tables/Compare.png">
@@ -71,6 +71,8 @@ We have provided GitHub links pointing to the PyTorch implementation code for al
 </p>
     
 Our method has shown excellent performance on all indicators.
+
+### Ablation study
 
 <div align=center>
   <img src="https://github.com/IIPL-HangzhouDianziUniversity/SASAN-pytorch/blob/main/tables/Ablation1.png">
