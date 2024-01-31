@@ -4,7 +4,7 @@ import torch.nn.functional as F
 from timm.models.layers import trunc_normal_, DropPath
 from functools import partial
 import torch.nn.functional as F
-from ASEM import *
+from .ASEM import *
 
 import torch
 import pytorch_lightning as pl
@@ -174,10 +174,10 @@ class filter_trans(nn.Module):
 class FINE(nn.Module):
     def __init__(self, rate,cutoff,feat):#feat==channel
         super().__init__()
-        self.rate = nn.Parameter(torch.tensor(rate))
+        self.rate = nn.Parameter(torch.tensor(rate),requires_grad=True)
         self.cutoff = cutoff
         self.feat=feat
-        self.mask = nn.Parameter(torch.ones(1,self.feat,self.cutoff,self.cutoff,self.cutoff))
+        self.mask = nn.Parameter(torch.ones(1,self.feat,self.cutoff,self.cutoff,self.cutoff),requires_grad=True)
 
     def forward(self, x,fier):
         col = fier.shape[2]
@@ -242,7 +242,7 @@ class SASAN(nn.Module):
         self.fine5= FINE(0.5,6,512)
         self.filter_trans = filter_trans('low')
 
-        self.asem = ASEM(axial_dim=96, spatial_dims=3, in_channels=out_channels, head=8)
+        self.asem = ASEM(axial_dim=96, spatial_dims=3, in_channels=out_channels, head=16)
 
     def forward(self, x: torch.Tensor):
         filter_low = self.filter_trans(x)
@@ -256,7 +256,6 @@ class SASAN(nn.Module):
         x3=self.fine4(x3,filter_low)*x3
         x4 = self.down_4(x3)
         x4=self.fine5(x4,filter_low)*x4
-        x4 = self.down_4(x3)
         u4 = self.upcat_4(x4, x3)
         u3 = self.upcat_3(u4, x2)
         u2 = self.upcat_2(u3, x1)
